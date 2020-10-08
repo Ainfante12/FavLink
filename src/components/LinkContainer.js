@@ -1,10 +1,11 @@
 import React from 'react';
-// import Table from './Table';
-// import Form from './Form';
+import Table from './Table';
+import Form from './Form';
 
 class LinkContainer extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
+        this.state = []
         /* TODO - Create state object for storing favLinks */
     }
 
@@ -26,7 +27,7 @@ class LinkContainer extends React.Component {
             <div className="container">
                 <h1>My Favorite Links</h1>
                 <p>Add a new url with a name and link to the table.</p>
-                {/*TODO - Add Table Component */}
+               
                 
                 <br/>
 
