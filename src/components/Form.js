@@ -31,6 +31,11 @@ class Form extends Component {
         return(
             <form>
                 {/* TODO - Logic for returning a form element with labels and inputs for link name and URL */}
+                <label>Name:</label>
+                <input type="text"></input>
+                <label >URL:</label>
+                <input type="text"></input>
+                <button>Submit</button> {/*have to add an onClick method that way when the button is clicked something happens} */}
             </form>
         )
     

@@ -27,12 +27,15 @@ class LinkContainer extends React.Component {
             <div className="container">
                 <h1>My Favorite Links</h1>
                 <p>Add a new url with a name and link to the table.</p>
-               
+                {/*Since LinkContainer is the parent, we have to add both the Table and Form component */}
+                {/*TODO - Add Table Component */}
+                 <Table />
                 
                 <br/>
 
                 <h3>Add New</h3>
                 {/*TODO - Add Form Component */}
+                <Form />
             </div>
         );
     }

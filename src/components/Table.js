@@ -19,13 +19,13 @@ const TableBody = props => {
     // we use Array.map to create table rows from LinkData passed via props
     const rows = props.linkData.map((row, index) => {
         return (
-            <div className = "table_1">
+            
             <tr key={index}>
                 <td>{row.name}</td>
                 <td><a href={row.URL}>{row.URL}</a></td>
                 <td><button onClick={() => props.removeLink(index)}>Delete</button></td>
             </tr>
-            </div>
+            
         );
     });
 
@@ -38,7 +38,7 @@ const Table = (props) => {
     return (
         <table>
             <TableHeader/>
-            <TableBody/>
+            <TableBody linkData={[]}/> {/*have to pass in linkData and the props in order for it to work */}
         
         </table>
     )
